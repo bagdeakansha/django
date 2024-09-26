@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% comment %} <link rel="stylesheet" href="{% static 'css/style.css' %}"> {% endcomment %}
+</head>
+<body>
+{{msg}}
+    <h1 align="center">------Dashboard------</h1>
+    <div id="form">
+    {% comment %} Name:{{name1}} <br>
+    contact: {{contact1}} <br>
+    email :{{email1}} <br>
+    password :{{password1}} <br> {% endcomment %}
+    {{nm}}
+    {{em}}
+    {{con}}
+    {{pas}}
+    <a href="{% url 'logout' %}">logout</a>
+    
+    </div>
+</body>
+</html>

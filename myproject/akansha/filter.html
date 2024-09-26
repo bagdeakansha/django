@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load custom_filters %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>{{value|add:"10"}}</h1>
+    <h1>{{value|capfirst}}</h1>
+    <h1>{{value|lower}}</h1>
+    <h1>{{value|lower|upper}}</h1>
+    <h1>{{value|upper}}</h1>
+    <h1>{{value|title}}</h1>
+    <h1>{{value|rjust:"100"}}</h1>
+    <h1>{{value|center:"100"}}</h1>
+</body>
+</html>

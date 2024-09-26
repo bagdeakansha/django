@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="{% static 'css/style.css' %}"> -->
+</head>
+<body>
+    {% comment %} <!-- <h1>Akansha</h1>
+    <h2>Python Developer....</h2>
+    <img src="{% static 'css/image/a1.jpg' %}" alt="" height="250px"> <br>
+    Name:{{key1.name}} <br>
+    age:{{key1.age}} <br>
+    qualification:{{key1.quali}} <br>
+    <hr>
+    Name:{{name.age}} <br>
+    age:{{Age.age}} <br>
+    qualification:{{Qualifi.age}} <br>
+    <hr>
+    Name:{{name.qualifi}} <br>
+    age:{{Age.qualifi}} <br>
+    qualification:{{Qualifi.qualifi}} <br> --> {% endcomment %}
+     {% comment %} <h1>Hello!!! </h1>
+    <hr/>
+    {{key1.name}}
+    {{key1.age}}
+    {{key1.qualifi}}
+    <hr/>
+    {{key2.name}}
+    {{key2.age}}
+    {{key2.qualifi}}
+    <hr/>
+    {{key3.name}}
+    {{key3.age}}
+    {{key3.qualifi}} {% endcomment %}
+    {% comment %} {{key1}}  {% endcomment %}
+    {% comment %} ---------------------------------- {% endcomment %}
+    {% if key1 %}
+         {% comment %} {% if key1. %}
+             {{key1}}
+        {% else %}
+            hyyyy
+        {% endif %}  {% endcomment %}
+        
+       
+        {{key1}}
+    {% elif key2 %}
+        {{key2}}
+    {% elif key3 %}
+        {{key3}}
+    {% else %}
+    <h1>Hello</h1>
+    {% endif %} 
+
+</body>
+</html>

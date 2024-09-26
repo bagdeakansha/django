@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% comment %} <link rel="stylesheet" href="{% static 'css/style.css' %}"> {% endcomment %}
+</head>
+<body>
+    <h1 align="center">------Login Page------</h1>
+    <div id="form">
+    {{msg}}
+    
+        <form action="{% url 'login' %}" method='post'>
+        {% csrf_token %}
+            <label for="">Name :</label> 
+            <input type="text" name="nm"> <br>
+            <label for="">Password</label> 
+            <input type="password" name="ps"> <br>
+            <button>login</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% comment %} <link rel="stylesheet" href="{% static 'css/style.css' %}"> {% endcomment %}
+</head>
+<body>
+    <h1 align="center">------Registration Form------</h1>
+    <div id="form">
+        <form action="{% url 'rdata' %}" method="post">
+        {% csrf_token %}
+            <label for="">Name :</label> 
+            <input type="text" name="nm"> <br>
+            <label for="">Email :</label> 
+            <input type="mail" name="em"> <br>
+            <label for="">Contact :</label> 
+            <input type="number" name="ct"> <br>
+            <label for="">Password</label> 
+            <input type="password" name="ps"> <br>
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+</html>

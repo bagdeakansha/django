@@ -1,0 +1,27 @@
+
+table{
+    background-color: yellow;
+    border:2px solid black
+}
+#form{
+    height:300px;
+    background-color: bisque;
+    width:400px;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+form{
+    padding: 10px;
+    margin: 10px;
+}
+input{
+    margin: 10px;
+}
+button{
+    margin-left: 80px;
+    padding: 8px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: rgb(72, 197, 72);
+}

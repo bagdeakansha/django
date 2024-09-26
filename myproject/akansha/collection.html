@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+ {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    {{data}} <hr/>
+    {% if data %}
+    <table border='1'height='250px', width='500px'>
+        <tbody>
+            <tr>
+                <th>Sno</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+            {% for i in data %}
+            <tr>
+                <td>{{forloop.counter}}</td>
+                <td>{{i.name}}</td>
+                <td>{{i.age}}</td>
+                <td>{{i.city}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+       {% comment %} {% for i in data %}
+           {{i}} <hr/>
+        {% endfor %}
+    {% endif %} {% endcomment %}
+    
+</body>
+</html>
